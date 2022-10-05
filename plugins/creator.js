@@ -4,9 +4,9 @@
 let handler = async (m, { conn }) => {
   const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:M Nasir\n' // full name
+            + 'FN:Adit Ganz\n' // full name
             + `ORG:${wm};\n` // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=6288220924312:+62 882-2092-4312\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=6281316235253:+62 813-1623-5253\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 const sentMsg  = await conn.sendMessage(
     m.chat,
