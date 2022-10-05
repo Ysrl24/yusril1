@@ -52,7 +52,7 @@ Hai, %ucapan %name! 👋
   header: ' *%category*',
   body: ' • %cmd %islimit %isPremium',
   footer: '\n',
-  after: `*Made by ♡*
+  after: `*Made by Ramz*
 *%npmname* | %version
 ${'```%npmdesc```'}
 `,
@@ -162,7 +162,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
         caption: text.trim(),
         buttons: [
           {buttonId: `.info`, buttonText: {displayText: '❕INFO'}, type: "RESPONSE"},
-          {buttonId: `.diamond`, buttonText: {displayText: 'JADI BOT🔑'}, type: "RESPONSE"}
+          {buttonId: `.jadibot`, buttonText: {displayText: 'JADI BOT🔑'}, type: "RESPONSE"}
         ],
         headerType: 'IMAGE'
    }, {quoted: m, ephemeralExpiration:86400})
