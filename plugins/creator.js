@@ -6,7 +6,7 @@ let handler = async (m, { conn }) => {
             + 'VERSION:3.0\n' 
             + 'FN:Adit Ganz\n' // full name
             + `ORG:${wm};\n` // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=6281316235253:+62 813-1623-5253\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=6281226512906:+62 812-2651-2906\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 const sentMsg  = await conn.sendMessage(
     m.chat,
