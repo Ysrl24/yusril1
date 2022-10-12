@@ -2,8 +2,8 @@ let fetch = require('node-fetch')
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 
-	if (!text) throw `*Link tiktok nya mana?*\n\n*contoh:* \n_${usedPrefix}${command} https://vm.tiktok.com/ZGJAmhSrp/_`	let res = await fetch(`https://itztobz.me/api/tiktok?url=` + text)
-
+	if (!text) throw `*Link tiktok nya mana?*\n\n*contoh:* \n_${usedPrefix}${command} https://vm.tiktok.com/ZGJAmhSrp/_`	
+	let res = await fetch(`https://itztobz.me/api/tiktok?url=` + text)
 	let json = await res.json()
 
 conn.sendMessage(m.chat, {
