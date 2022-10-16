@@ -26,7 +26,7 @@ handler.command = /^yts(earch)?$/i
 module.exports = handler*/
 
 
-/* let yts = require('yt-search')
+let yts = require('yt-search')
 let handler = async (m, { text }) => {
   if (!text) throw 'Cari apa?'
   let results = await yts(text)
@@ -52,4 +52,4 @@ handler.tags = ['tools']
 handler.command = /^yts(earch)?$/i
 handler.limit = true
 
-module.exports = handler */
+module.exports = handler 
