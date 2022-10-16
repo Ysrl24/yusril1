@@ -1,4 +1,4 @@
-/* let limit = 30
+let limit = 30
 let yts = require('yt-search')
 let fetch = require('node-fetch')
 const { servers, yta, ytv } = require('../lib/y2mate')
@@ -60,4 +60,4 @@ module.exports = handler
 async function shortlink(url) {
 isurl = /https?:\/\//.test(url)
 return isurl ? (await require('axios').get('https://tinyurl.com/api-create.php?url='+encodeURIComponent(url))).data : ''
-} */
+}
