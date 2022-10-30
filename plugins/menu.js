@@ -157,7 +157,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    conn.sendMessage(m.chat, {
+    conn.sendMessage(m.chat,{
         location: { degreesLatitude: underfined, degreesLongitude: underfined, jpegThumbnail: fs.readFileSync('./media/blackpink.png') },
         caption: text.trim(),
         buttons: [
