@@ -158,7 +158,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     conn.sendMessage(m.chat,{
-        location: { degreesLatitude: underfined, degreesLongitude: underfined, jpegThumbnail: fs.readFileSync('./media/IMG-20221004-WA0197.jpg') },
+        location: {degreesLatitude: underfined, degreesLongitude: underfined, jpegThumbnail: fs.readFileSync('./media/IMG-20221004-WA0197.jpg')},
         caption: text.trim(),
         buttons: [
           {buttonId: `.info`, buttonText: {displayText: '❕INFO'}, type: "RESPONSE"},
